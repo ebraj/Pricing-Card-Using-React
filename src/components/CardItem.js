@@ -15,7 +15,7 @@ const CardItem = () => {
         </div>
       </div>
       <div className="card__item--btn-ul">
-        <button>GET STARTED</button>
+        <button className="btn-outline">GET STARTED</button>
         <ul>
           <li>3 new projects/month</li>
           <li>Basic Interaction</li>

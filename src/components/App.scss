@@ -27,6 +27,11 @@
 .container-1400{
     @include container-width(1400px);
 }
+.btn-outline{
+  @include button-component(transparent, #111111);
+  border: 1px solid #111111;
+  border-radius: 2px;
+}
 
 // Stuffs related to the fluid typography from the CSS tricks
 @function strip-unit($value) {

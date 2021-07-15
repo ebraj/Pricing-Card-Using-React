@@ -6,7 +6,7 @@ import CardContainer from "./CardContainer";
 
 const App = () => {
   return (
-    <div>
+    <div className="container-1200">
       <CardContainer />
     </div>
   );
