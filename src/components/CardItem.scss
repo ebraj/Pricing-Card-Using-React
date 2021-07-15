@@ -1,0 +1,38 @@
+$primary-white: #eeeeff;
+$graident-white : radial-gradient(circle, rgba(233,233,233,1) 0%, rgba(222,222,222,1) 100%);
+
+body{
+    background-color: $primary-white;
+}
+
+//Styling the card item
+.card__item{
+    padding: 8.5px;
+    min-width: min-content;
+    max-width: 320px;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 2px;
+    #{&}--title{
+        background: $graident-white;
+        padding: 20px;
+        border-radius: 2px;
+    }
+    #{&}--pricing{
+        padding: 30px;
+    }
+    #{&}--btn-ul{
+        margin: 10px;
+        >button{
+            width: 100%;
+        }
+        >ul{
+            text-align: left;
+            padding: 15px;
+            li{
+                padding: 5px;
+            }
+        }
+    }
+}

@@ -1,10 +1,13 @@
 import React from "react";
 import "./App.scss";
 
+// Importing the component
+import CardContainer from "./CardContainer";
+
 const App = () => {
   return (
     <div>
-      <h1>App</h1>
+      <CardContainer />
     </div>
   );
 };
