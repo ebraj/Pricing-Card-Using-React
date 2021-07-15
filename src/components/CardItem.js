@@ -3,7 +3,6 @@ import "./CardItem.scss";
 
 const CardItem = (props) => {
   const { applyGradient } = props;
-  console.log(applyGradient);
   return (
     <div className="card__item">
       <div className={`card__item--title ${applyGradient}`}>
