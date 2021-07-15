@@ -1,3 +1,5 @@
+$primary-dark : #303030;
+
 // All about the mixins
 @mixin flex-container($direction,$align,$justify,$wrap){
     display: flex;
@@ -24,8 +26,8 @@
     min-height: 100vh;
 }
 .btn-outline{
-  @include button-component(transparent, #111111);
-  border: 1px solid #111111;
+  @include button-component(transparent, $primary-dark);
+  border: 1px solid $primary-dark;
   border-radius: 2px;
 }
 

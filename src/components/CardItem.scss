@@ -1,6 +1,9 @@
 $primary-white: #f8fafe;
 $secondary-white: #ffffff;
-$graident-white : linear-gradient(66deg, rgba(214,214,214,1) 0%, rgba(198,198,198,1) 100%);
+$primary-dark : #303030;
+$gradient-blue : linear-gradient(66deg, rgba(237,237,237,1) 0%, rgba(217,217,217,1) 100%);
+$gradient-purple : linear-gradient(66deg, rgba(218,206,255,1) 0%, rgba(159,148,254,1) 100%);
+$gradient-orange : linear-gradient(66deg, rgba(255,220,206,1) 0%, rgba(247,145,81,1) 100%);;
 
 body{
     background-color: $primary-white;
@@ -16,13 +19,18 @@ body{
     text-align: center;
     border-radius: 2px;
     box-shadow: -1px 11px 27px -10px rgba(192,192,192,0.4);
+    color: $primary-dark;
     #{&}--title{
-        background: $graident-white;
         padding: 20px;
         border-radius: 2px;
+        color: $primary-white;
     }
     #{&}--pricing{
         padding: 30px;
+        h1{
+            padding: 20px 0;
+            font-size: 3rem;
+        }
     }
     #{&}--btn-ul{
         margin: 10px;
@@ -37,4 +45,15 @@ body{
             }
         }
     }
+}
+
+// Gradient Related Classes
+.blueGradient{
+    background: $gradient-blue;
+}
+.purpleGradient{
+    background: $gradient-purple;
+}
+.orangeGradient{
+    background: $gradient-orange;
 }

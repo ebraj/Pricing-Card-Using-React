@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap');
+
 *,
 *::before,
 *::after{
@@ -8,7 +10,8 @@
 html,body{
     height: 100%;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    // font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 ul li{
     list-style: none;

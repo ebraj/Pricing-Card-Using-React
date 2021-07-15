@@ -1,10 +1,12 @@
 import React from "react";
 import "./CardItem.scss";
 
-const CardItem = () => {
+const CardItem = (props) => {
+  const { applyGradient } = props;
+  console.log(applyGradient);
   return (
     <div className="card__item">
-      <div className="card__item--title">
+      <div className={`card__item--title ${applyGradient}`}>
         <h2>FREE</h2>
       </div>
       <div className="card__item--pricing">
