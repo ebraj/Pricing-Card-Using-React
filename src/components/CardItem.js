@@ -3,7 +3,7 @@ import "./CardItem.scss";
 
 const CardItem = (props) => {
   const { objProp } = props;
-  const { level, applyGradient, price, para1, para2, btnDark } = objProp;
+  const { level, applyGradient, price, para1, para2, btnDark, tick } = objProp;
   return (
     <div className="card__item">
       <div className={`card__item--title ${applyGradient}`}>
@@ -21,9 +21,9 @@ const CardItem = (props) => {
           GET STARTED
         </button>
         <ul>
-          <li>3 new projects/month</li>
-          <li>Basic Interaction</li>
-          <li>Assets Library</li>
+          <li>{tick ? "✔️" : "❌"} 3 new projects/month</li>
+          <li>{tick ? "✔️" : "❌"} Basic Interaction</li>
+          <li>✔️ Assets Library</li>
         </ul>
       </div>
     </div>

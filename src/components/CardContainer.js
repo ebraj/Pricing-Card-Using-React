@@ -10,6 +10,7 @@ const allCardsInfo = [
     para1: "Great for Staters",
     para2: "Discover how to create your first projects.",
     btnDark: false,
+    tick: false,
   },
   {
     level: "LITE",
@@ -18,6 +19,7 @@ const allCardsInfo = [
     para1: "For Planned Projects",
     para2: "Bring your designs to the next level and export them.",
     btnDark: true,
+    tick: true,
   },
   {
     level: "PRO",
@@ -26,6 +28,7 @@ const allCardsInfo = [
     para1: "For Professional Use",
     para2: "Enjoy limitless use with interactive export options",
     btnDark: false,
+    tick: true,
   },
 ];
 const CardContainer = () => {
