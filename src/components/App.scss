@@ -25,7 +25,7 @@ $primary-white: #f8fafe;
     @include container-width(1200px);
     @include flex-container(row, center,center , wrap);
     min-height: 100vh;
-    padding: 50px 0;
+    padding: 50px 20px;
 }
 .btn-outline{
   @include button-component(transparent, $primary-dark);
