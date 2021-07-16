@@ -31,6 +31,12 @@ body{
             padding: 20px 0;
             font-size: 3rem;
         }
+        p{
+            padding: 5px 0;
+            &:nth-child(2){
+                text-transform: uppercase;
+            }
+        }
     }
     #{&}--btn-ul{
         margin: 10px;

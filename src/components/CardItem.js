@@ -2,21 +2,24 @@ import React from "react";
 import "./CardItem.scss";
 
 const CardItem = (props) => {
-  const { applyGradient } = props;
+  const { objProp } = props;
+  const { level, applyGradient, price, para1, para2, btnDark } = objProp;
   return (
     <div className="card__item">
       <div className={`card__item--title ${applyGradient}`}>
-        <h2>FREE</h2>
+        <h2>{level}</h2>
       </div>
       <div className="card__item--pricing">
         <div>
-          <h1>$0/mo</h1>
-          <p>Great For Staters</p>
-          <p>Discover how to create your first projects.</p>
+          <h1>${price}/mo</h1>
+          <p>{para1}</p>
+          <p>{para2}</p>
         </div>
       </div>
       <div className="card__item--btn-ul">
-        <button className="btn-outline">GET STARTED</button>
+        <button className={btnDark ? "btn-dark" : "btn-outline"}>
+          GET STARTED
+        </button>
         <ul>
           <li>3 new projects/month</li>
           <li>Basic Interaction</li>
